@@ -130,13 +130,13 @@ public class ExerciseDetailsPager extends Fragment {
         mDbMachine = new DAOMachine(getContext());
 
         ((MainActivity) getActivity()).getActivityToolbar().setVisibility(View.GONE);
-        top_toolbar = view.findViewById(R.id.actionToolbarMachine);
+//        top_toolbar = view.findViewById(R.id.actionToolbarMachine);
         top_toolbar.setNavigationIcon(R.drawable.ic_back);
         top_toolbar.setNavigationOnClickListener(onClickToolbarItem);
 
         machineDelete = view.findViewById(R.id.action_machine_delete);
         machineSave = view.findViewById(R.id.action_machine_save);
-        machineFavorite = view.findViewById(R.id.favButton);
+//        machineFavorite = view.findViewById(R.id.favButton);
         machineFavorite.setOnClickListener(v -> {
             MaterialFavoriteButton mFav = (MaterialFavoriteButton) v;
             boolean t = mFav.isFavorite();

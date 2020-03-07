@@ -43,8 +43,8 @@ public class MachineArrayFullAdapter extends ArrayAdapter<Machine> {
         TextView t1 = convertView.findViewById(R.id.LIST_MACHINE_NAME);
         t1.setText(machine.getName());
 
-        TextView t2 = convertView.findViewById(R.id.LIST_MACHINE_SHORT_DESCRIPTION);
-        t2.setText(machine.getDescription());
+//        TextView t2 = convertView.findViewById(R.id.LIST_MACHINE_SHORT_DESCRIPTION);
+//        t2.setText(machine.getDescription());
 
         ImageView i0 = convertView.findViewById(R.id.LIST_MACHINE_PHOTO);
         String lPath = machine.getPicture();

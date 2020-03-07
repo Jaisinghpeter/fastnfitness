@@ -61,12 +61,12 @@
     <string name="ExerciceLabel">Exercises</string>
 
     <!-- Profile Fragment -->
-    <string name="weightMenuLabel">Weight Track</string>
+    <string name="weightMenuLabel">Nearest Hospitals</string>
     <string name="weightLabel">Weight(kg)</string>
-    <string name="fatLabel">Fat(%)</string>
+    <string name="fatLabel">Blood Pressure(mm)</string>
     <string name="bonesLabel">Bones(%)</string>
-    <string name="waterLabel">Water(%)</string>
-    <string name="musclesLabel">Muscles(%)</string>
+    <string name="waterLabel">Heart Rate(bpm)</string>
+    <string name="musclesLabel">Sugar Level(mg/dl)</string>
     <string name="sizeLabel">Size</string>
     <string name="measureLabel">Measure</string>
     <string name="weightTableLabel">Weight records:</string>

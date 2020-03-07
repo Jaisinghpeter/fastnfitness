@@ -266,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             if (mpFontesPagerFrag == null)
-                mpFontesPagerFrag = FontesPagerFragment.newInstance(FONTESPAGER, 6);
+                mpFontesPagerFrag = FontesPagerFragment.newInstance(WEIGHT, 5);
             if (mpWeightFrag == null) mpWeightFrag = WeightFragment.newInstance(WEIGHT, 5);
             if (mpProfileFrag == null) mpProfileFrag = ProfileFragment.newInstance(PROFILE, 10);
             if (mpSettingFrag == null) mpSettingFrag = SettingsFragment.newInstance(SETTINGS, 8);
@@ -325,8 +325,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (savedInstanceState == null) {
-            showFragment(FONTESPAGER, false); // Create fragment, do not add to backstack
-            currentFragmentName = FONTESPAGER;
+            showFragment(WEIGHT, false); // Create fragment, do not add to backstack
+            currentFragmentName = WEIGHT;
         }
 
         dataList = new ArrayList<>();
@@ -336,13 +336,14 @@ public class MainActivity extends AppCompatActivity {
         DrawerItem drawerTitleItem = new DrawerItem("TITLE", R.drawable.ic_profile_black, true);
 
         dataList.add(drawerTitleItem);
+        dataList.add(new DrawerItem(this.getResources().getString(R.string.bodytracking), R.drawable.ic_scale, true));
         dataList.add(new DrawerItem(this.getResources().getString(R.string.menu_Workout), R.drawable.ic_barbell, true));
         //dataList.add(new DrawerItem(this.getResources().getString(R.string.CardioMenuLabel), R.drawable.ic_running, true));
         dataList.add(new DrawerItem(this.getResources().getString(R.string.MachinesLabel), R.drawable.ic_machine, true));
-        dataList.add(new DrawerItem(this.getResources().getString(R.string.weightMenuLabel), R.drawable.ic_scale, true));
-        dataList.add(new DrawerItem(this.getResources().getString(R.string.bodytracking), R.drawable.ic_measuring_tape, true));
-        dataList.add(new DrawerItem(this.getResources().getString(R.string.SettingLabel), R.drawable.ic_params, true));
-        dataList.add(new DrawerItem(this.getResources().getString(R.string.AboutLabel), R.drawable.ic_action_info_outline, true));
+
+//        dataList.add(new DrawerItem(this.getResources().getString(R.string.bodytracking), R.drawable.ic_measuring_tape, true));
+//        dataList.add(new DrawerItem(this.getResources().getString(R.string.SettingLabel), R.drawable.ic_params, true));
+//        dataList.add(new DrawerItem(this.getResources().getString(R.string.AboutLabel), R.drawable.ic_action_info_outline, true));
 
         mDrawerAdapter = new CustomDrawerAdapter(this, R.layout.custom_drawer_item,
             dataList);
@@ -1006,15 +1007,15 @@ public class MainActivity extends AppCompatActivity {
                     setTitle(getString(R.string.ProfileLabel));
                     break;
                 case 1:
-                    showFragment(FONTESPAGER);
-                    setTitle(getResources().getText(R.string.menu_Workout));
+                    showFragment(WEIGHT);
+                    setTitle(getResources().getText(R.string.bodytracking));
                     break;
                 case 2:
-                    showFragment(MACHINES);
+                    showFragment(ABOUT);
                     setTitle(getResources().getText(R.string.MachinesLabel));
                     break;
                 case 3:
-                    showFragment(WEIGHT);
+                    showFragment(SETTINGS);
                     setTitle(getResources().getText(R.string.weightMenuLabel));
                     break;
                 case 4:
