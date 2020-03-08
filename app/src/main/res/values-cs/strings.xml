@@ -8,7 +8,7 @@
     <string name="global_ok">OK</string>
     <string name="global_yes">Ano</string>
     <string name="global_no">Ne</string>
-
+    <string name="location_permission_denied">Location Permission is been denied</string>
     <string name="removedid">ID odstraněno</string>
     <string name="failedtocreatefolder">Chyba při vytváření složky</string>
     <string name="optional">Volitelné</string>

@@ -10,7 +10,7 @@
 
     <string name="removedid">id supprimé</string>
     <string name="failedtocreatefolder">Echec de création du repertoire</string>
-
+    <string name="location_permission_denied">Location Permission is been denied</string>
 
     <string name="app_name">Fast n Fitness</string>
     <string name="action_settings">Paramètres</string>

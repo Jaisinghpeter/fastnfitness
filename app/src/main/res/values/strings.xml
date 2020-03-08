@@ -61,6 +61,7 @@
     <string name="ExerciceLabel">Exercises</string>
 
     <!-- Profile Fragment -->
+    <string name="location_permission_denied">Location Permission is been denied</string>
     <string name="weightMenuLabel">Nearest Hospitals</string>
     <string name="weightLabel">Weight(kg)</string>
     <string name="fatLabel">Blood Pressure(mm)</string>

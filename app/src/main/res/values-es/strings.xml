@@ -8,7 +8,7 @@
     <string name="global_ok">Aceptar</string>
     <string name="global_yes">Sí</string>
     <string name="global_no">No</string>
-
+    <string name="location_permission_denied">Location Permission is been denied</string>
     <string name="removedid">ID removido</string>
     <string name="failedtocreatefolder">Error al crear carpeta</string>
     <string name="optional">Opcional</string>

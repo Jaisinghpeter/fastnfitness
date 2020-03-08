@@ -5,19 +5,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-import com.easyfitness.DAO.DatabaseHelper;
-import com.easyfitness.licenses.CustomLicense;
+//import com.google.android.gms.maps.GoogleMap;
 
-import de.psdev.licensesdialog.LicensesDialog;
-import de.psdev.licensesdialog.licenses.ApacheSoftwareLicense20;
-import de.psdev.licensesdialog.licenses.GnuLesserGeneralPublicLicense21;
-import de.psdev.licensesdialog.licenses.License;
-import de.psdev.licensesdialog.licenses.MITLicense;
-import de.psdev.licensesdialog.model.Notice;
 
 public class AboutFragment extends Fragment {
     private String name;
@@ -28,9 +20,10 @@ public class AboutFragment extends Fragment {
      * Create a new instance of DetailsFragment, initialized to
      * show the text at 'index'.
      */
-    public static AboutFragment newInstance(String name, int id) {
-        AboutFragment f = new AboutFragment();
 
+    public static AboutFragment newInstance(String name, int id) {
+
+        AboutFragment f = new AboutFragment();
         // Supply index input as an argument.
         Bundle args = new Bundle();
         args.putString("name", name);

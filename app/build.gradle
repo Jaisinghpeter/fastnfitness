@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.easyfitness"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 28
         versionCode 42
         versionName "0.18.10"
@@ -85,11 +85,13 @@ dependencies {
     implementation 'androidx.preference:preference:1.0.0'
     implementation 'androidx.viewpager:viewpager:1.0.0'
     implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.esri.arcgisruntime:arcgis-android:100.4.0'
 
 // Firebase
     //implementation 'com.google.firebase:firebase-core:17.0.0'
 
 // Other
+    implementation 'com.esri.arcgisruntime:arcgis-android:100.7.0'
     implementation 'com.kovachcode:timePickerWithSeconds:1.0.1'
     implementation 'de.psdev.licensesdialog:licensesdialog:2.0.0' //2.0.0
     implementation 'com.github.hannesa2:MPAndroidChart:3.0.7'

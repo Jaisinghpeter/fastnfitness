@@ -26,7 +26,7 @@
     <string name="ShareLabel">Delen</string>
     <string name="EditLabel">Bewerken</string>
     <string name="DeleteRecordDialog">Dit record verwijderen?</string>
-
+    <string name="location_permission_denied">Location Permission is been denied</string>
     <!-- Fonte Fragment -->
     <string name="FonteLabel">Bodybuilding</string>
     <string name="RecordLabel">Records</string>

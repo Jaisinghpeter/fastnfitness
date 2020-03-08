@@ -7,7 +7,7 @@
     <string name="global_ok">Ok</string>
     <string name="global_yes">Ja</string>
     <string name="global_no">Nein</string>
-
+    <string name="location_permission_denied">Location Permission is been denied</string>
     <string name="removedid">ID entfernen</string>
     <string name="failedtocreatefolder">Ordner erstellen fehlgeschlagen</string>
 

@@ -12,7 +12,7 @@
     <string name="removedid">ID removido</string>
     <string name="failedtocreatefolder">Falha ao criar pasta</string>
     <string name="optional">Opcional</string>
-
+    <string name="location_permission_denied">Location Permission is been denied</string>
     <string name="app_name">Fast N Fitness</string>
     <string name="action_settings">Configurações</string>
     <string name="DateLabel">Data</string>

@@ -1,37 +1,24 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/tab_machines"
-    android:name="tab_machines"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:focusable="true"
-    android:focusableInTouchMode="true"
-    android:orientation="vertical"
-    android:paddingLeft="0dp"
-    android:paddingTop="0dp"
-    android:paddingRight="0dp"
-    android:paddingBottom="0dp">
 
-    <Button
-        android:id="@+id/addExercise"
-        style="@style/Widget.AppCompat.Button.AddButton"
-        android:text="@string/AddLabel" />
+    >
 
-    <AutoCompleteTextView
-        android:id="@+id/searchField"
+    <com.esri.arcgisruntime.mapping.view.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.esri.arcgisruntime.mapping.view.MapView>
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:hint="@string/FilterHint"
-        android:imeOptions="actionNext"
-        android:inputType="text|textCapWords|textAutoComplete|textNoSuggestions|textVisiblePassword"
-        android:nextFocusForward="@+id/editSerie"
-        android:singleLine="true" />
-
-    <ListView
-        android:id="@+id/listMachine"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:drawSelectorOnTop="false"
-        android:minHeight="300dip" />
-
-</LinearLayout>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:entries="@array/categories_array"
+        android:popupBackground="#fbfafa"
+        tools:popupBackground="@android:color/background_light" />
+</RelativeLayout>
