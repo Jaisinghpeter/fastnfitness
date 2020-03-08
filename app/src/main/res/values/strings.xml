@@ -33,7 +33,7 @@
     <string name="SerieLabel">Sets</string>
     <string name="RepetitionLabel">Repetitions</string>
     <string name="RepetitionLabel_short">Reps</string>
-    <string name="MachineLabel">Exercise</string>
+    <string name="MachineLabel">Nearest Hospitals</string>
     <string name="PoidsLabel">Weight</string>
     <string name="KgUnitLabel">Kg</string>
     <string name="LbsUnitLabel">Lbs</string>
@@ -99,7 +99,7 @@
     <string name="ResetAppLabel">Reset application</string>
 
     <!-- Machine Fragment -->
-    <string name="MachinesLabel">Exercises</string>
+    <string name="MachinesLabel">Doctors</string>
     <string name="DescriptionLabel">Description</string>
 
     <!-- Preferences -->
@@ -299,7 +299,7 @@
     <string name="ProfileLabel">Profile</string>
     <string name="edit_value">Edit value</string>
     <string name="obsoleteCardioTab">You can now use the Record menu for bodybuilding AND cardio. This tab will disappear in a future update.</string>
-    <string name="menu_Workout">Workout</string>
+    <string name="menu_Workout">Doctors</string>
     <string name="renameMachine_error_text2">ERROR: This exercise name already exists. It is not possible to merge two exercises with same name and different types.</string>
     <string name="recordcopied">Record copied</string>
     <string name="imcLabel">BMI</string>
