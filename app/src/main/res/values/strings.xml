@@ -99,7 +99,7 @@
     <string name="ResetAppLabel">Reset application</string>
 
     <!-- Machine Fragment -->
-    <string name="MachinesLabel">Doctors</string>
+    <string name="MachinesLabel">Nearest Hospitals</string>
     <string name="DescriptionLabel">Description</string>
 
     <!-- Preferences -->

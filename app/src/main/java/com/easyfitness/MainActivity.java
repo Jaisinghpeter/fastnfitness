@@ -1025,7 +1025,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case 2:
                     showFragment(ABOUT);
-                    setTitle(getResources().getText(R.string.MachinesLabel));
+                    setTitle("Doctors Contact");
                     break;
                 case 3:
                     showFragment(SETTINGS);
