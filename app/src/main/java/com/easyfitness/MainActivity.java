@@ -348,10 +348,10 @@ public class MainActivity extends AppCompatActivity {
 
         dataList.add(drawerTitleItem);
         dataList.add(new DrawerItem(this.getResources().getString(R.string.bodytracking), R.drawable.ic_scale, true));
-        dataList.add(new DrawerItem(this.getResources().getString(R.string.menu_Workout), R.drawable.ic_barbell, true));
+        dataList.add(new DrawerItem(this.getResources().getString(R.string.menu_Workout), R.drawable.ic_scale, true));
         //dataList.add(new DrawerItem(this.getResources().getString(R.string.CardioMenuLabel), R.drawable.ic_running, true));
-        dataList.add(new DrawerItem(this.getResources().getString(R.string.MachinesLabel), R.drawable.ic_machine, true));
-
+        dataList.add(new DrawerItem("Nearest Hospitals", R.drawable.ic_scale, true));
+        dataList.add(new DrawerItem("Search User", R.drawable.ic_scale, true));
 //        dataList.add(new DrawerItem(this.getResources().getString(R.string.bodytracking), R.drawable.ic_measuring_tape, true));
 //        dataList.add(new DrawerItem(this.getResources().getString(R.string.SettingLabel), R.drawable.ic_params, true));
 //        dataList.add(new DrawerItem(this.getResources().getString(R.string.AboutLabel), R.drawable.ic_action_info_outline, true));
@@ -733,7 +733,7 @@ public class MainActivity extends AppCompatActivity {
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
 
-    private void showFragment(String pFragmentName) {
+    public void showFragment(String pFragmentName) {
         showFragment(pFragmentName, true);
     }
 
@@ -757,7 +757,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (pFragmentName.equals(ABOUT)) {
             ft.replace(R.id.fragment_container, getAboutFragment(), ABOUT);
         } else if (pFragmentName.equals(BODYTRACKING)) {
-            ft.replace(R.id.fragment_container, getBodyPartFragment(), BODYTRACKING);
+            ft.replace(R.id.fragment_container, getMachineFragment(), MACHINES);
         } else if (pFragmentName.equals(PROFILE)) {
             ft.replace(R.id.fragment_container, getProfileFragment(), PROFILE);
         }
@@ -1007,7 +1007,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private class DrawerItemClickListener implements ListView.OnItemClickListener {
+    public class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView parent, View view, int position, long id) {
 
